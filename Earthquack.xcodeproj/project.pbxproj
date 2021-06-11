@@ -17,9 +17,9 @@
 		BE65DBBC2670F9F80055BD07 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE65DBBB2670F9F80055BD07 /* MapViewController.swift */; };
 		BE65DBBE267150080055BD07 /* EarthquakeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE65DBBD267150080055BD07 /* EarthquakeClient.swift */; };
 		BE65DBC026715A950055BD07 /* EarthquakeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE65DBBF26715A950055BD07 /* EarthquakeResponse.swift */; };
-		BE65DBC62671F34F0055BD07 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE65DBC52671F34F0055BD07 /* Geometry.swift */; };
-		BE65DBC82671F3540055BD07 /* Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE65DBC72671F3540055BD07 /* Features.swift */; };
 		BE65DBCA2672C38F0055BD07 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE65DBC92672C38F0055BD07 /* DataController.swift */; };
+		BE65DBCD267393970055BD07 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE65DBCC267393970055BD07 /* Geometry.swift */; };
+		BE65DBCF267393AF0055BD07 /* Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE65DBCE267393AF0055BD07 /* Features.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +35,9 @@
 		BE65DBBB2670F9F80055BD07 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		BE65DBBD267150080055BD07 /* EarthquakeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeClient.swift; sourceTree = "<group>"; };
 		BE65DBBF26715A950055BD07 /* EarthquakeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeResponse.swift; sourceTree = "<group>"; };
-		BE65DBC52671F34F0055BD07 /* Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Geometry.swift; path = ../../../../../.Trash/Geometry.swift; sourceTree = "<group>"; };
-		BE65DBC72671F3540055BD07 /* Features.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Features.swift; path = ../../../../../.Trash/Features.swift; sourceTree = "<group>"; };
 		BE65DBC92672C38F0055BD07 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		BE65DBCC267393970055BD07 /* Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		BE65DBCE267393AF0055BD07 /* Features.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +95,9 @@
 			children = (
 				BE65DBCB2672C6190055BD07 /* CoreData */,
 				BE65DBBD267150080055BD07 /* EarthquakeClient.swift */,
-				BE65DBC52671F34F0055BD07 /* Geometry.swift */,
-				BE65DBC72671F3540055BD07 /* Features.swift */,
 				BE65DBBF26715A950055BD07 /* EarthquakeResponse.swift */,
+				BE65DBCC267393970055BD07 /* Geometry.swift */,
+				BE65DBCE267393AF0055BD07 /* Features.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,16 +190,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE65DBC82671F3540055BD07 /* Features.swift in Sources */,
 				BE65DBAC2670F4AF0055BD07 /* Earthquakes.xcdatamodeld in Sources */,
 				BE65DBBE267150080055BD07 /* EarthquakeClient.swift in Sources */,
 				BE65DBA62670F4AF0055BD07 /* WelcomeViewController.swift in Sources */,
 				BE65DBC026715A950055BD07 /* EarthquakeResponse.swift in Sources */,
+				BE65DBCF267393AF0055BD07 /* Features.swift in Sources */,
 				BE65DBCA2672C38F0055BD07 /* DataController.swift in Sources */,
 				BE65DBA22670F4AF0055BD07 /* AppDelegate.swift in Sources */,
-				BE65DBC62671F34F0055BD07 /* Geometry.swift in Sources */,
 				BE65DBBC2670F9F80055BD07 /* MapViewController.swift in Sources */,
 				BE65DBA42670F4AF0055BD07 /* SceneDelegate.swift in Sources */,
+				BE65DBCD267393970055BD07 /* Geometry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
