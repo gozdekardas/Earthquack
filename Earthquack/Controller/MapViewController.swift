@@ -42,6 +42,8 @@ class MapViewController: UIViewController,  MKMapViewDelegate{
             if let data = data{
                 let response = EarthquakeResponse(type:  data.type, features: data.features )
                 print(response.features)
+                
+                // here i want to get the latitude from response
             }
         }
     }
