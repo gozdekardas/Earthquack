@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE5855572674B09A006AD8B6 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5855562674B09A006AD8B6 /* TabBarViewController.swift */; };
+		BE58555C2674C675006AD8B6 /* Earthquakes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58555B2674C675006AD8B6 /* Earthquakes.swift */; };
+		BE58555E2674CC0E006AD8B6 /* QuackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58555D2674CC0E006AD8B6 /* QuackTableViewController.swift */; };
+		BE585560267521A4006AD8B6 /* SavedEartquakesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58555F267521A4006AD8B6 /* SavedEartquakesTableView.swift */; };
 		BE65DBA22670F4AF0055BD07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE65DBA12670F4AF0055BD07 /* AppDelegate.swift */; };
 		BE65DBA42670F4AF0055BD07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE65DBA32670F4AF0055BD07 /* SceneDelegate.swift */; };
 		BE65DBA62670F4AF0055BD07 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE65DBA52670F4AF0055BD07 /* WelcomeViewController.swift */; };
@@ -20,9 +24,14 @@
 		BE65DBCA2672C38F0055BD07 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE65DBC92672C38F0055BD07 /* DataController.swift */; };
 		BE65DBCD267393970055BD07 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE65DBCC267393970055BD07 /* Geometry.swift */; };
 		BE65DBCF267393AF0055BD07 /* Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE65DBCE267393AF0055BD07 /* Features.swift */; };
+		BE65DBD1267398D60055BD07 /* customAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE65DBD0267398D60055BD07 /* customAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE5855562674B09A006AD8B6 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		BE58555B2674C675006AD8B6 /* Earthquakes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Earthquakes.swift; sourceTree = "<group>"; };
+		BE58555D2674CC0E006AD8B6 /* QuackTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuackTableViewController.swift; sourceTree = "<group>"; };
+		BE58555F267521A4006AD8B6 /* SavedEartquakesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedEartquakesTableView.swift; sourceTree = "<group>"; };
 		BE65DB9E2670F4AF0055BD07 /* Earthquack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Earthquack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE65DBA12670F4AF0055BD07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE65DBA32670F4AF0055BD07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +47,7 @@
 		BE65DBC92672C38F0055BD07 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		BE65DBCC267393970055BD07 /* Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
 		BE65DBCE267393AF0055BD07 /* Features.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features.swift; sourceTree = "<group>"; };
+		BE65DBD0267398D60055BD07 /* customAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +61,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE5855582674B0D3006AD8B6 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				BE65DBA72670F4AF0055BD07 /* Main.storyboard */,
+				BE65DBAF2670F4B20055BD07 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
 		BE65DB952670F4AF0055BD07 = {
 			isa = PBXGroup;
 			children = (
 				BE65DBA02670F4AF0055BD07 /* Earthquack */,
+				BE5855582674B0D3006AD8B6 /* StoryBoards */,
+				BE65DBAD2670F4B20055BD07 /* Assets.xcassets */,
 				BE65DB9F2670F4AF0055BD07 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,11 +93,10 @@
 			children = (
 				BE65DBA12670F4AF0055BD07 /* AppDelegate.swift */,
 				BE65DBA32670F4AF0055BD07 /* SceneDelegate.swift */,
+				BE65DBB22670F4B20055BD07 /* Info.plist */,
 				BE65DBB92670F9B50055BD07 /* Model */,
 				BE65DBB82670F9A70055BD07 /* Controller */,
 				BE65DBBA2670F9D30055BD07 /* View */,
-				BE65DBB22670F4B20055BD07 /* Info.plist */,
-				BE65DBAD2670F4B20055BD07 /* Assets.xcassets */,
 			);
 			path = Earthquack;
 			sourceTree = "<group>";
@@ -86,6 +106,9 @@
 			children = (
 				BE65DBA52670F4AF0055BD07 /* WelcomeViewController.swift */,
 				BE65DBBB2670F9F80055BD07 /* MapViewController.swift */,
+				BE5855562674B09A006AD8B6 /* TabBarViewController.swift */,
+				BE58555D2674CC0E006AD8B6 /* QuackTableViewController.swift */,
+				BE58555F267521A4006AD8B6 /* SavedEartquakesTableView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -98,6 +121,7 @@
 				BE65DBBF26715A950055BD07 /* EarthquakeResponse.swift */,
 				BE65DBCC267393970055BD07 /* Geometry.swift */,
 				BE65DBCE267393AF0055BD07 /* Features.swift */,
+				BE58555B2674C675006AD8B6 /* Earthquakes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -105,8 +129,7 @@
 		BE65DBBA2670F9D30055BD07 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BE65DBA72670F4AF0055BD07 /* Main.storyboard */,
-				BE65DBAF2670F4B20055BD07 /* LaunchScreen.storyboard */,
+				BE65DBD0267398D60055BD07 /* customAnnotationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -192,8 +215,13 @@
 			files = (
 				BE65DBAC2670F4AF0055BD07 /* Earthquakes.xcdatamodeld in Sources */,
 				BE65DBBE267150080055BD07 /* EarthquakeClient.swift in Sources */,
+				BE58555C2674C675006AD8B6 /* Earthquakes.swift in Sources */,
 				BE65DBA62670F4AF0055BD07 /* WelcomeViewController.swift in Sources */,
+				BE5855572674B09A006AD8B6 /* TabBarViewController.swift in Sources */,
+				BE65DBD1267398D60055BD07 /* customAnnotationView.swift in Sources */,
 				BE65DBC026715A950055BD07 /* EarthquakeResponse.swift in Sources */,
+				BE58555E2674CC0E006AD8B6 /* QuackTableViewController.swift in Sources */,
+				BE585560267521A4006AD8B6 /* SavedEartquakesTableView.swift in Sources */,
 				BE65DBCF267393AF0055BD07 /* Features.swift in Sources */,
 				BE65DBCA2672C38F0055BD07 /* DataController.swift in Sources */,
 				BE65DBA22670F4AF0055BD07 /* AppDelegate.swift in Sources */,
