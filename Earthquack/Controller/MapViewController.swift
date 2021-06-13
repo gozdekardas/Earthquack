@@ -23,7 +23,7 @@ class MapViewController: UIViewController, NSFetchedResultsControllerDelegate, M
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
-        mapView.register(customAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+        mapView.register(CustomAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
         
         let now = Date()
         let formatter = DateFormatter()

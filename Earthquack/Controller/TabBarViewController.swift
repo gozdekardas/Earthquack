@@ -11,7 +11,7 @@ class TabBarController: UITabBarController {
     
     
     @IBAction func cancel(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        dismiss(animated: true)
     }
     
     
@@ -44,17 +44,17 @@ class TabBarController: UITabBarController {
     }
     
     func showMessage(title: String, message: String) {
-           let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
-           alertVC.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
-               
-               if let nav = self.navigationController {
-                   nav.popViewController(animated: true)
-               } else {
-                   self.dismiss(animated: true, completion: nil)
-               }
-           }))
-           present(alertVC, animated: true)
-           
-           
-       }
+        let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            
+            if let nav = self.navigationController {
+                nav.popViewController(animated: true)
+            } else {
+                self.dismiss(animated: true)
+            }
+        }))
+        present(alertVC, animated: true)
+        
+        
+    }
 }

@@ -30,7 +30,6 @@ class EarthquakeClient{
                 return
             }
             
-          //  print(String(data: data, encoding: .utf8)!)
             
             let decoder = JSONDecoder()
             do {
@@ -53,7 +52,6 @@ class EarthquakeClient{
             sendGETRequest(url: Endpoints.getLatestEarthquakes(yesterday: yesterday, today: today).url , response: EarthquakeResponse.self) { (response, error) in
                     if let response = response {
                         completionHandler(response, nil)
-                      //  print(response.features)
                     } else {
                         completionHandler(nil, error)
                     }

@@ -8,7 +8,7 @@
 import UIKit
 import MapKit
 
-class customAnnotationView: MKPinAnnotationView {
+class CustomAnnotationView: MKPinAnnotationView {
     override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
         super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
         canShowCallout = true
