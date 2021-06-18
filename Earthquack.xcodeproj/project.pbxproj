@@ -71,9 +71,9 @@
 		BE65DB952670F4AF0055BD07 = {
 			isa = PBXGroup;
 			children = (
+				BE65DBA12670F4AF0055BD07 /* AppDelegate.swift */,
+				BE65DBA32670F4AF0055BD07 /* SceneDelegate.swift */,
 				BE65DBA02670F4AF0055BD07 /* Earthquack */,
-				BE5855582674B0D3006AD8B6 /* StoryBoards */,
-				BE65DBAD2670F4B20055BD07 /* Assets.xcassets */,
 				BE65DB9F2670F4AF0055BD07 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,12 +89,12 @@
 		BE65DBA02670F4AF0055BD07 /* Earthquack */ = {
 			isa = PBXGroup;
 			children = (
-				BE65DBA12670F4AF0055BD07 /* AppDelegate.swift */,
-				BE65DBA32670F4AF0055BD07 /* SceneDelegate.swift */,
-				BE65DBB22670F4B20055BD07 /* Info.plist */,
 				BE65DBB92670F9B50055BD07 /* Model */,
 				BE65DBB82670F9A70055BD07 /* Controller */,
+				BE65DBAD2670F4B20055BD07 /* Assets.xcassets */,
 				BE65DBBA2670F9D30055BD07 /* View */,
+				BE5855582674B0D3006AD8B6 /* StoryBoards */,
+				BE65DBB22670F4B20055BD07 /* Info.plist */,
 			);
 			path = Earthquack;
 			sourceTree = "<group>";
