@@ -9,11 +9,13 @@ import UIKit
 import MapKit
 import CoreData
 import Foundation
+import NVActivityIndicatorView
 
-class MapViewController: UIViewController, NSFetchedResultsControllerDelegate, MKMapViewDelegate{
+class MapViewController: UIViewController, NSFetchedResultsControllerDelegate, MKMapViewDelegate {
     @IBOutlet weak var mapView: MKMapView!
     
-    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
+
+    @IBOutlet weak var activityIndicator: NVActivityIndicatorView!
     
     
     var dataController:DataController!
@@ -41,7 +43,10 @@ class MapViewController: UIViewController, NSFetchedResultsControllerDelegate, M
         let yesterday = formatter.string(from: lastDate!)
         print(yesterday)
         
-        activityIndicatorView.startAnimating()
+        activityIndicator.type = NVActivityIndicatorType.ballScaleMultiple
+        
+        activityIndicator.startAnimating()
+        
         EarthquakeClient.getQuakes(yesterday: yesterday, today: today) { (data, error) in
             //    let quake = Earthquake(context: DataController.shared.viewContext)
             if let data = data {
@@ -76,7 +81,7 @@ class MapViewController: UIViewController, NSFetchedResultsControllerDelegate, M
                 }
                 print(annotations.count)
                 self.mapView.addAnnotations(annotations)
-                self.activityIndicatorView.stopAnimating()
+                self.activityIndicator.stopAnimating()
             }else{
                 self.showMessage(title:"Failed", message: "Error when getting earthquakes")
             }

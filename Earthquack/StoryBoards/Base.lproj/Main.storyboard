@@ -273,10 +273,11 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="SHf-YO-BC5">
-                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7nF-yf-E3j" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                <rect key="frame" x="171" y="415" width="73" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </activityIndicatorView>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="w0K-g6-rYf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -284,13 +285,13 @@
                     <tabBarItem key="tabBarItem" title="" image="icon_mapview-deselected" id="MQC-U3-dpk"/>
                     <navigationItem key="navigationItem" id="x2Q-Og-cDZ"/>
                     <connections>
-                        <outlet property="activityIndicatorView" destination="SHf-YO-BC5" id="2ic-5x-gvh"/>
+                        <outlet property="activityIndicator" destination="7nF-yf-E3j" id="SUp-jI-b1H"/>
                         <outlet property="mapView" destination="mvu-z6-FXI" id="gHR-Wa-Z1v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U2e-io-zC1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="303" y="421"/>
+            <point key="canvasLocation" x="302.89855072463769" y="420.53571428571428"/>
         </scene>
     </scenes>
     <resources>

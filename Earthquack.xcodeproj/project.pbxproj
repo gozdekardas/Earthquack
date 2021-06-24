@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00B25461AF87ECDFFBD04F6C /* Pods_Earthquack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097B34BE5ACA2447691E377C /* Pods_Earthquack.framework */; };
 		BE5855572674B09A006AD8B6 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5855562674B09A006AD8B6 /* TabBarViewController.swift */; };
 		BE58555C2674C675006AD8B6 /* Earthquakes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58555B2674C675006AD8B6 /* Earthquakes.swift */; };
 		BE58555E2674CC0E006AD8B6 /* QuackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58555D2674CC0E006AD8B6 /* QuackTableViewController.swift */; };
@@ -27,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		097B34BE5ACA2447691E377C /* Pods_Earthquack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Earthquack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA058F067A2CFDC17508037 /* Pods-Earthquack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Earthquack.release.xcconfig"; path = "Target Support Files/Pods-Earthquack/Pods-Earthquack.release.xcconfig"; sourceTree = "<group>"; };
+		B8555699EB9F8F7137A87365 /* Pods-Earthquack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Earthquack.debug.xcconfig"; path = "Target Support Files/Pods-Earthquack/Pods-Earthquack.debug.xcconfig"; sourceTree = "<group>"; };
 		BE5855562674B09A006AD8B6 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		BE58555B2674C675006AD8B6 /* Earthquakes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Earthquakes.swift; sourceTree = "<group>"; };
 		BE58555D2674CC0E006AD8B6 /* QuackTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuackTableViewController.swift; sourceTree = "<group>"; };
@@ -53,12 +57,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B25461AF87ECDFFBD04F6C /* Pods_Earthquack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		712B1A9175E37AEEDE12914E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8555699EB9F8F7137A87365 /* Pods-Earthquack.debug.xcconfig */,
+				AFA058F067A2CFDC17508037 /* Pods-Earthquack.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BE5855582674B0D3006AD8B6 /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +90,8 @@
 				BE65DBA32670F4AF0055BD07 /* SceneDelegate.swift */,
 				BE65DBA02670F4AF0055BD07 /* Earthquack */,
 				BE65DB9F2670F4AF0055BD07 /* Products */,
+				712B1A9175E37AEEDE12914E /* Pods */,
+				EE53CF5EEF93071E396B0428 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +157,14 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		EE53CF5EEF93071E396B0428 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				097B34BE5ACA2447691E377C /* Pods_Earthquack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE65DBB52670F4B20055BD07 /* Build configuration list for PBXNativeTarget "Earthquack" */;
 			buildPhases = (
+				7B7474C0D3462D351A80C448 /* [CP] Check Pods Manifest.lock */,
 				BE65DB9A2670F4AF0055BD07 /* Sources */,
 				BE65DB9B2670F4AF0055BD07 /* Frameworks */,
 				BE65DB9C2670F4AF0055BD07 /* Resources */,
+				E20F9496FEFBBE3B8C9E0B1C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,6 +231,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B7474C0D3462D351A80C448 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Earthquack-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E20F9496FEFBBE3B8C9E0B1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Earthquack/Pods-Earthquack-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Earthquack/Pods-Earthquack-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Earthquack/Pods-Earthquack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BE65DB9A2670F4AF0055BD07 /* Sources */ = {
@@ -367,6 +436,7 @@
 		};
 		BE65DBB62670F4B20055BD07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8555699EB9F8F7137A87365 /* Pods-Earthquack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -386,6 +456,7 @@
 		};
 		BE65DBB72670F4B20055BD07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFA058F067A2CFDC17508037 /* Pods-Earthquack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

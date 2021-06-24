@@ -1,0 +1,6 @@
+framework module Pods_Earthquack {
+  umbrella header "Pods-Earthquack-umbrella.h"
+
+  export *
+  module * { export * }
+}
