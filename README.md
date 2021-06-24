@@ -8,7 +8,7 @@ In map view, while loading pins, activity indicator welcomes you. If an error oc
 
 On saved Earthquakes page, if you click on a cell, that cell will be deleted by that click.
 
-  - UIKit, MapKit, CoreData
+  - UIKit, MapKit, CoreData , NVActivityIndicatorView - CocoaPods
   - Mapview, TableView, UIActivityIndicatorView, MKPointAnnotation
   - Navigation Controller, Table Bar Controller , NSFetchedResultsController, UIAlertController
   - HTTP Get Request
